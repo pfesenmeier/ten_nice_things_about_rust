@@ -1,5 +1,5 @@
-mod find_char;
+use nice_things::strings_and_errors::*;
 fn main() {
-    println!("Hello world!");
+    print_every_character();
 }
 
