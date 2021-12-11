@@ -8,10 +8,3 @@ edition = "2021"
 [dependencies]
 anyhow = "1.0.51"
 
-[[bin]]
-name = "nice_things_bin"
-path = "src/main.rs"
-
-[lib]
-name = "nice_things"
-path = "src/lib.rs"

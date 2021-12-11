@@ -17,7 +17,8 @@ pub fn print_every_character() {
 /// Parses bytes into string. 
 ///    
 ///    ```
-///    use nice_things::strings_and_errors::make_string; 
+///    use ten_nice_things_about_rust::strings_and_errors::make_string; 
+///
 ///    let sparkle_heart = [240, 159, 146, 150];
 ///    let sparkle_heart = make_string(&sparkle_heart);
 ///    assert_eq!(sparkle_heart, Ok("💖"));
