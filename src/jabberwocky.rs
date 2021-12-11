@@ -28,7 +28,7 @@ impl From<(char, char)> for JabberWocky {
 }
 
 #[test]
-fn test_jabberwocky_from_slice() {
+fn test_jabberwocky_from_tuple() {
     let hollis: JabberWocky = ('👽','🦗').into();
     assert_eq!(format!("{}", hollis), "👽-🦗=<");
 }
