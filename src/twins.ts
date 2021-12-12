@@ -1,4 +1,4 @@
-const goodTwin = { is: "good" };
+const goodTwin = { is: 'good' };
 const evilTwin = goodTwin;
 evilTwin.is = "evil";
 
