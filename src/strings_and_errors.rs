@@ -1,19 +1,5 @@
 use std::str::Utf8Error;
 
-pub fn print_every_character() {
-    let utf8 = "jazz🎶";
-
-    println!("printing characters");
-    for c in utf8.chars() {
-        println!("{}", c);
-    }
-
-    println!("printing bytes");
-    for (i, b) in utf8.bytes().enumerate() {
-        println!("byte {} at index {}", b, i);
-    }
-}
-
 /// Parses bytes into string.
 ///    
 ///    ```

@@ -9,8 +9,8 @@ fn good_or_evil() -> String {
     let mut good_twin = Twin {
         is: "good".to_string(),
     };
-    let evil = &mut good_twin;
-    evil.is = "evil".to_string();
+    let mut evil_twin = &mut good_twin;
+    evil_twin.is = "evil".to_string();
 
     format!("Good twin: {:?}", good_twin)
 }

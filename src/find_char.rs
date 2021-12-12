@@ -49,7 +49,6 @@ fn silly_pattern_matching() {
 
     let Point { x: one, y: three } = point;
 
-
     if let Some(six) = find_letter(&hello_world, 'w') {
 
         assert_eq!(fourty_two + eight + six, 56);
