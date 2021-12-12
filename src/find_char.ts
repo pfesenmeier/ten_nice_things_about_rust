@@ -1,10 +1,10 @@
 import { assertEquals } from "https://deno.land/std@0.117.0/testing/asserts.ts";
 
-function findChar(string: string, c: string): number | null {
+function findLetter(word: string, letter: string): number | null {
     let result = null;
 
-    for (let i = 0; i < string.length; i++) {
-       if (string[i] === c) {
+    for (let i = 0; i < word.length; i++) {
+       if (word[i] === letter) {
           result = i;
        }
     }
@@ -13,5 +13,6 @@ function findChar(string: string, c: string): number | null {
 }
 
 Deno.test("test findChar", () => {
-  assertEquals(findChar("hello world", 'w'), 6);
+  assertEquals(findLetter("hello world", 'w'), 6);
 })
+

@@ -6,3 +6,4 @@ pub mod open_file;
 pub mod mario;
 pub mod strings_and_errors;
 pub mod twins;
+pub mod advent_of_code;
