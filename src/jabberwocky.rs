@@ -41,9 +41,9 @@ impl From<(char, char)> for JabberWocky {
 }
 
 impl Iterator for JabberWocky {
-   type Item = u32;
-   fn next(&mut self) -> Option<<Self as Iterator>::Item> { 
-      Some(42)
+    type Item = u32;
+    fn next(&mut self) -> Option<<Self as Iterator>::Item> {
+        Some(42)
     }
 }
 
@@ -84,5 +84,5 @@ fn test_jabberwocky_iter() {
         face: '👹'.to_string(),
         body: '🦎',
     };
-   assert_eq!(jb.into_iter().take(5).next(), Some(42));
+    assert_eq!(jb.into_iter().take(5).next(), Some(42));
 }
