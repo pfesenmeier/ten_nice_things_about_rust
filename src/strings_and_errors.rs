@@ -10,9 +10,6 @@ use std::str::Utf8Error;
 ///    assert_eq!(sparkle_heart, Ok("💖"));
 ///    ```
 pub fn make_string(bytes: &[u8]) -> Result<&str, Utf8Error> {
-    // some bytes, in a stack-allocated array
-
-    // We know these bytes are valid, so just use `unwrap()`.
     std::str::from_utf8(bytes)
 }
 

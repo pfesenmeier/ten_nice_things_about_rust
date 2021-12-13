@@ -40,6 +40,13 @@ impl From<(char, char)> for JabberWocky {
     }
 }
 
+impl Iterator for JabberWocky {
+   type Item = u32;
+   fn next(&mut self) -> Option<<Self as Iterator>::Item> { 
+      Some(42)
+    }
+}
+
 #[test]
 fn test_jabberwocky_from_tuple() {
     let hollis: JabberWocky = ('👽', '🦗').into();
@@ -69,4 +76,13 @@ fn test_jabberwocky_display() {
         body: '🦎',
     };
     assert_eq!(format!("{}", jb), "👹-🦎=<");
+}
+
+#[test]
+fn test_jabberwocky_iter() {
+    let jb = JabberWocky {
+        face: '👹'.to_string(),
+        body: '🦎',
+    };
+   assert_eq!(jb.into_iter().take(5).next(), Some(42));
 }
